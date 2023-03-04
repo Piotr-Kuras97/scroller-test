@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: thistle;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+section:nth-of-type(2) {
+  background-color: tan;
+}
+section:nth-of-type(3) {
+  background-color: hotpink;
+}
+section:nth-of-type(4) {
+  background-color: forestgreen;
+}
+section p {
+  width: 75%;
+  margin: auto;
+  padding: 25px 0;
+}
+section .number {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  font-size: 50px;
+}
+section img {
+  width: 50%;
+  height: 200px;
+  margin: auto;
+}
+
+.scroller__navigation {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.scroller__navigation ul {
+  list-style: none;
+}
+.scroller__navigation ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: gray;
+  margin: 15px 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.scroller__navigation ul li.active {
+  background-color: black;
+  border-color: yellow;
+}/*# sourceMappingURL=main.css.map */
